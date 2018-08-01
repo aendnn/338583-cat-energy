@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Кэт энерджи</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <nav class="main-header__nav main-nav">
+        <div class="main-nav__container container">
+          <ul class="main-nav__list site-nav">
+            <li class="site-nav__item">
+              <a class="site-nav__link logotype" href="index.html">
+                <span class="visually-hidden">Главная</span>
+                <img class="logotype__img" src="#" alt="Cat Energy">
+              </a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="index.html">Главная</a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link site-nav__link--current" href="catalog.html">Каталог продукции</a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link">Подбор программы</a>
+            </li>
+          </ul>
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть/закрыть меню</span>
+          </button>
+        </div>
+      </nav>
+    </header>
+    <main class="page-main">
+      <section class="food-programm">
+        <h1 class="page-main__title">Подбор программы</h1>
+        <div class="food-programm__wrap container">
+          <p class="food-programm__instructions">
+            Заполните анкету и мы подберем
+            программу питания для вашего кота
+          </p>
+        </div>
+        <form class="food-programm__form" action="https://echo.htmlacademy.ru" method="get">
+          <fieldset class="food-programm__paramount">
+            <div class="food-programm__group-wrap container">
+              <p class="food-programm__item-text">
+                <input class="food-programm__input-text" type="text" name="name" id="name" placeholder="Барсик" required>
+                <label class="food-programm__input-mark-text" for="name">Имя:*</label>
+              </p>
+              <p class="food-programm__item-text">
+                <input class="food-programm__input-text" type="text" name="weight" id="weight" placeholder="7" required>
+                <label class="food-programm__input-mark-text" for="weight">Вес (кг):*</label>
+              </p>
+              <p class="food-programm__item-text">
+                <input class="food-programm__input-text" type="text" name="age" id="age" placeholder="7" required>
+                <label class="food-programm__input-mark-text" for="age">Возраст (лет):</label>
+              </p>
+            </div>
+          </fieldset>
+          <fieldset class="food-programm__weight">
+            <div class="food-programm__group-wrap container">
+              <p class="food-programm__item-radio">
+                <input class="food-programm__input-radio" type="radio" name="weight-loss" id="weight-loss" required>
+                <label class="food-programm__input-mark-toggle" for="weight-loss">Похудение</label>
+              </p>
+              <p class="food-programm__item-radio">
+                <input class="food-programm__input-radio" type="radio" name="weight-gain" id="weight-gain">
+                <label class="food-programm__input-mark-toggle" for="weight-gain">Набор массы</label>
+              </p>
+              <p class="food-programm__item-radio">
+                <input class="food-programm__input-radio" type="radio" name="advice" id="advice">
+                <label class="food-programm__input-mark-toggle" for="advice">Не знаю (Нужен ваш совет)</label>
+              </p>
+            </div>
+          </fieldset>
+          <fieldset class="food-programm__group">
+            <legend class="food-programm__group-title">Контактные данные (владельца кота)</legend>
+            <div class="food-programm__group-wrap container">
+              <p class="food-programm__item-text">
+                <input class="food-programm__input-text" type="text" name="email" id="email" placeholder="kuklachev@gmail.com" required>
+                <label class="food-programm__input-mark-text" for="email">E-mail:*</label>
+              </p>
+              <p class="food-programm__item-text">
+                <input class="food-programm__input-text" type="text" name="phone" id="phone" placeholder="8 (960) 900-60-90" required>
+                <label class="food-programm__input-mark-text" for="phone">Телефон:*</label>
+              </p>
+            </div>
+          </fieldset>
+          <fieldset class="food-programm__group">
+            <legend class="food-programm__group-title">Комментарий</legend>
+            <div class="food-programm__group-wrap container">
+              <p class="food-programm__item-text">
+                <textarea class="food-programm__textarea" placeholder="Расскажите обо всех повадках кота"></textarea>
+              </p>
+            </div>
+          </fieldset>
+          <fieldset class="food-programm__group">
+            <legend class="food-programm__group-title">Дополнительно</legend>
+            <div class="food-programm__group-wrap container">
+              <p class="food-programm__item-checkbox">
+                <input class="food-programm__input-checkbox" type="checkbox" name="additionaly" id="sugar">
+                <label class="food-programm__input-mark-toggle" for="sugar">Сахарозаменитель</label>
+              </p>
+              <p class="food-programm__item-checkbox">
+                <input class="food-programm__input-checkbox" type="checkbox" name="additionaly" id="water">
+                <label class="food-programm__input-mark-toggle" for="water">Питьевая вода</label>
+              </p>
+              <p class="food-programm__item-checkbox">
+                <input class="food-programm__input-checkbox" type="checkbox" name="additionaly" id="milk">
+                <label class="food-programm__input-mark-toggle" for="milk">Молоко</label>
+              </p>
+              <p class="food-programm__item-checkbox">
+                <input class="food-programm__input-checkbox" type="checkbox" name="additionaly" id="vitamins">
+                <label class="food-programm__input-mark-toggle" for="vitamins">Витамины</label>
+              </p>
+            </div>
+          </fieldset>
+          <div class="container">
+            <button class="food-programm__btn btn" type="submit">Отправить заявку</button>
+            <span class="food-programm__note">* — Обязательные поля</span>
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer class="main-footer">
+      <section class="main-footer__additional-info additional-info">
+        <h2 class="visually-hidden">Наш адрес</h2>
+        <div class="additional-info__container container">
+          <p class="additional-info__invite">
+            <b class="additional-info__invite-dealers">Приглашаем к сотрудничеству дилеров!</b>
+          </p>
+          <p class="additional-info__address">
+            ул. Большая Конюшенная, д. 19/8
+            <span class="additional-info__city">Санкт-Петербург</span>
+          </p>
+        </div>
+        <img class="additional-info__map-img" src="#" alt="ул. Большая Конюшенная, д. 19/8">
+      </section>
+      <section class="contacts">
+        <h2 class="visually-hidden">Социальные сети</h2>
+        <div class="contacts__container container">
+          <a class="contacts__logotype logotype">
+            <span class="visually-hidden">Главная</span>
+            <img class="logotype__img" src="#" alt="Cat Energy">
+          </a>
+          <ul class="contacts__social social">
+            <li class="social__item">
+              <a class="social__link" href="vk.com">
+                <span class="visually-hidden">Вк</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="instagram.com">
+                <span class="visually-hidden">Инстаграм</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="facebook.com">
+                <span class="visually-hidden">Фейсбук</span>
+              </a>
+            </li>
+          </ul>
+          <div class="copyright">
+            <p class="copyright__name">HTML Academy</p>
+            <a class="copyright__link" href="#">
+              <span class="visually-hidden">Перейти на лендинг интенсива «Профессиональный HTML и CSS, уровень 2»</span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </footer>
+  </body>
+</html>
