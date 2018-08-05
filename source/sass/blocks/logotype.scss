@@ -1,0 +1,34 @@
+.logotype {
+  display: block;
+  width: 191px;
+  padding: 13px 0;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 173px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 202px;
+  }
+}
+
+.logotype__img {
+  width: 191px;
+
+  @media (min-width: $tablet-width) {
+    width: 173px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 202px;
+  }
+}

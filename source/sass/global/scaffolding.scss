@@ -59,3 +59,17 @@ input[type="radio"].visually-hidden {
   overflow: hidden;
 }
 
+.container {
+  width: auto;
+  margin: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 92.2%;
+    max-width: 1220px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 94.3%;
+  }
+}
