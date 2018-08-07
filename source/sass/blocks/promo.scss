@@ -119,27 +119,29 @@
   @media (min-width: $tablet-width) {
     position: static;
     bottom: auto;
-    width: 39.7%;
+    width: 38.5%;
+    margin-left: 2px;
   }
 
   @media (min-width: $desktop-width) {
     width: 46%;
+    margin-left: 0;
   }
 }
 
 .promo__img {
   position: relative;
   z-index: 5;
-  min-height: 200px;
+  min-height: 198px;
   background-color: #ffffff;
 
   @media (min-width: $tablet-width) {
-    min-height: 465px;
+    min-height: 484px;
   }
 
   @media (min-width: $desktop-width) {
     width: 50%;
-    min-height: 695px;
+    min-height: 645px;
     background-color: transparent;
   }
 }

@@ -6,6 +6,16 @@
   text-transform: uppercase;
   color: #ffffff;
   background-color: $main-color;
+  transition: all 0.2s;
+
+  &:hover,
+  &:focus {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 
   @media (min-width: $tablet-width) {
     padding: 16px 20px;

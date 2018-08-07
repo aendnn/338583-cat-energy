@@ -1,0 +1,234 @@
+.options {
+  margin-bottom: 17px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 47px;
+  }
+}
+
+.options__container {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.options__option {
+  margin-bottom: 22px;
+  padding: 20px;
+  background-color: #f2f2f2;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    padding: 61px 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 46.7%;
+    padding: 60px 52px;
+
+    &:last-child {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.options__title {
+  @include text-reset;
+  position: relative;
+  margin-bottom: 28px;
+  padding-top: 10px;
+  padding-left: 70px;
+  font-size: 24px;
+  line-height: 37px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #111111;
+
+  &--icon::before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 2px;
+    width: 50px;
+    height: 50px;
+    background-color: $main-color;
+    border-radius: 50%;
+  }
+
+  &--icon::after {
+    content: "";
+    position: absolute;
+  }
+
+  &--icon-slim::after {
+    top: 1px;
+    left: 10px;
+    width: 35px;
+    height: 49px;
+    background-image: url("../img/icon-cat-slim.svg");
+    background-repeat: no-repeat;
+  }
+
+  &--icon-pro::after {
+    top: 14px;
+    left: -7px;
+    width: 67px;
+    height: 28px;
+    background-image: url("../img/icon-cat-pro.svg");
+    background-repeat: no-repeat;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 37px;
+    margin-bottom: 25px;
+    padding-top: 16px;
+    padding-left: 0;
+
+    &--icon::before {
+      left: auto;
+      top: 32px;
+      right: 11px;
+      width: 200px;
+      height: 200px;
+    }
+
+    &--icon-slim::after {
+      top: 20px;
+      left: auto;
+      right: 41px;
+      width: 140px;
+      height: 194px;
+    }
+
+    &--icon-pro::after {
+      top: 75px;
+      left: auto;
+      right: -23px;
+      width: 268px;
+      height: 112px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 73px;
+    padding-top: 17px;
+    padding-left: 161px;
+
+    &--icon::before {
+    top: -13px;
+    right: auto;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    }
+
+    &--icon-slim::after {
+      top: -19px;
+      left: 14px;
+      width: 69px;
+      height: 101px;
+    }
+
+    &--icon-pro::after {
+      top: 9px;
+      left: -18px;
+      width: 134px;
+      height: 80px;
+    }
+  }
+}
+
+.options__desc {
+  @include text-reset;
+  padding-bottom: 22px;
+  font-family: "Arial", "Verdana", sans-serif;
+  border-bottom: 1px solid #d9d9d9;
+
+  @media (min-width: $tablet-width) {
+    width: 63%;
+    font-size: 16px;
+    line-height: 24px;
+    border-bottom: none;
+
+    &--pro {
+      width: 57%;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: auto;
+  }
+}
+
+.options__to-catalog {
+  position: relative;
+  display: block;
+  margin-top: 20px;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #111111;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 97px;
+    width: 24px;
+    height: 11px;
+    background-image: url("../img/icon-right-arrow-long.svg");
+    background-repeat: no-repeat;
+    transition: all 0.3s;
+  }
+
+  &:hover::before,
+  &:focus::before {
+    width: 33px;
+    height: 11px;
+    background-image: url("../img/icon-right-arrow-verylong.svg")
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:active::before {
+    width: 33px;
+    height: 11px;
+    background-image: url("../img/icon-right-arrow-verylong.svg");
+    opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-top: 34px;
+    font-size: 20px;
+    line-height: 20px;
+
+    &::before {
+      top: 5px;
+      left: 131px;
+    }
+
+    &--pro::before {
+      left: 126px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 8px;
+  }
+}
