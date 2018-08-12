@@ -1,3 +1,19 @@
+.features {
+  margin-bottom: 46px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 26px;
+    padding-bottom: 102px;
+    border-bottom: 1px solid #e6e6e6;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 46px;
+    padding-bottom: 63px;
+    border-bottom: none;
+  }
+}
+
 .features__title {
   @include text-reset;
   margin-bottom: 31px;
@@ -37,6 +53,11 @@
       width: 45.8%;
     }
 
+    &--third,
+    &--fourth {
+      margin-bottom: 0;
+    }
+
     &::before {
       content: counter(section);
       position: absolute;
@@ -60,7 +81,7 @@
 
   @media (min-width: $desktop-width) {
     width: 20%;
-
+    margin-bottom: 0;
     &:nth-child(2n) {
       width: 20.1%;
     }

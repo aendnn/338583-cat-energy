@@ -48,10 +48,6 @@
 
   .main-nav--closed .site-nav__item {
     display: none;
-
-    &--active {
-      display: block;
-    }
   }
 
   .main-nav--nojs .main-nav__toggle {

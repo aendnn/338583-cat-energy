@@ -57,7 +57,7 @@
     flex-direction: column;
     width: auto;
     margin: 0;
-    padding: 44px 0;
+    padding: 43px 0;
     padding-left: 94px;
   }
 
@@ -71,7 +71,7 @@
 
 .promo__title {
   @include text-reset
-  margin-bottom: 25px;
+  margin-bottom: 24px;
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
@@ -79,7 +79,7 @@
 
   @media (min-width: $tablet-width) {
     width: 67%;
-    margin-bottom: 40px;
+    margin-bottom: 41px;
     font-size: 60px;
     line-height: 60px;
     text-align: left;
@@ -98,14 +98,14 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 48px;
+    margin-bottom: 47px;
     font-size: 20px;
     line-height: 20px;
     text-align: left;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 52px;
+    margin-bottom: 51px;
   }
 }
 
