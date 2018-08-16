@@ -5,12 +5,12 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
-    width: 67%;
+    width: 476px;
     margin-top: 21px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 42%;
+    width: 514px;
     margin-top: 23px;
   }
 }
@@ -90,9 +90,12 @@
     padding-bottom: 9px;
     font-size: 20px;
     line-height: 24px;
-    color: #ffffff;
 
-    &--current {
+    &--white {
+      color: #ffffff;
+    }
+
+    &--current-white {
       border-color: #ffffff;
     }
   }
