@@ -1,7 +1,11 @@
 .copyright {
   display: flex;
   justify-content: space-between;
-  padding: 22px 0;
+  padding: 23px 0;
+
+  &:active {
+    opacity: 0.3;
+  }
 
   @media (min-width: $tablet-width) {
     padding: 0;
@@ -31,6 +35,5 @@
 
   &:active {
     fill: $main-color;
-    opacity: 0.3;
   }
 }

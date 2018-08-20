@@ -14,8 +14,10 @@
 .main-nav__toggle {
   @include text-reset;
   position: absolute;
-  top: 25px;
+  top: 23px;
   right: 20px;
+  width: 24px;
+  height: 20px;
   background: none;
   border: none;
 

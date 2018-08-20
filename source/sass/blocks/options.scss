@@ -6,11 +6,11 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 48px;
+    margin-bottom: 46px;
   }
 }
 
-.options__container {
+.options__wrap {
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
@@ -36,7 +36,8 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 28px;
-    padding: 62px 52px;
+    padding: 76px 52px;
+    padding-bottom: 63px;
   }
 
   @media (min-width: $desktop-width) {
@@ -99,19 +100,18 @@
     font-size: 36px;
     line-height: 37px;
     margin-bottom: 25px;
-    padding-top: 16px;
-    padding-left: 0;
+    padding: 0;
 
     &--icon::before {
       left: auto;
-      top: 32px;
-      right: 8px;
+      top: 15px;
+      right: 10px;
       width: 200px;
       height: 200px;
     }
 
     &--icon-slim::after {
-      top: 20px;
+      top: 3px;
       left: auto;
       right: 41px;
       width: 140px;
@@ -119,7 +119,7 @@
     }
 
     &--icon-pro::after {
-      top: 75px;
+      top: 59px;
       left: auto;
       right: -23px;
       width: 268px;
@@ -234,6 +234,10 @@
   }
 
   @media (min-width: $desktop-width) {
+    &::before {
+      top: 4px;
+    }
+
     margin-top: 8px;
   }
 }

@@ -1,7 +1,7 @@
 .logotype {
   display: block;
   width: 191px;
-  padding: 14px 0;
+  padding: 12px 0;
 
   &:hover,
   &:focus {
@@ -14,6 +14,7 @@
 
   @media (min-width: $tablet-width) {
     width: 173px;
+    padding: 25px 0;
   }
 
   @media (min-width: $desktop-width) {

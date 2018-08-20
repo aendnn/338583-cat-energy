@@ -7,23 +7,26 @@
   background-size: 100%;
 
   @media (min-width: $tablet-width) {
+    padding-bottom: 17px;
     color: #111111;
     background-color: #ffffff;
     background-image: none;
   }
 
   @media (min-width: $desktop-width) {
+    padding-bottom: 85px;
+
     &::before {
       content: "";
       position: absolute;
-      top: -128px;
+      top: -131px;
       right: 0;
       width: 55.4%;
       height: 696px;
       background-image: url("../img/index-background-desktop@1x.jpg");
       background-repeat: no-repeat;
       background-size: cover;
-      background-position: 70px -3px;
+      background-position: 70px -10px;
       }
   }
 }
@@ -46,7 +49,7 @@
 
 .promo__content {
   position: relative;
-  padding: 26px 0;
+  padding: 27px 0;
   width: 87.5%;
   min-height: 305px;
   margin: 0 auto;
@@ -57,21 +60,21 @@
     flex-direction: column;
     width: auto;
     margin: 0;
-    padding: 43px 0;
+    padding: 30px 0;
     padding-left: 94px;
   }
 
   @media (min-width: $desktop-width) {
     width: 50%;
     margin: 0;
-    padding: 93px 0;
+    padding: 82px 0;
     padding-left: 80px;
   }
 }
 
 .promo__title {
   @include text-reset
-  margin-bottom: 24px;
+  margin-bottom: 23px;
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
@@ -110,6 +113,7 @@
 }
 
 .promo__btn-to-programm {
+  display: block;
   position: absolute;
   bottom: -174px;
   left: 0;
@@ -119,13 +123,15 @@
   @media (min-width: $tablet-width) {
     position: static;
     bottom: auto;
-    width: 38.5%;
-    margin-left: 2px;
+    width: 39.1%;
+    padding: 16px;
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
   }
 
   @media (min-width: $desktop-width) {
     width: 46%;
-    margin-left: 0;
   }
 }
 
@@ -141,7 +147,7 @@
 
   @media (min-width: $desktop-width) {
     width: 50%;
-    min-height: 645px;
+    min-height: 550px;
     background-color: transparent;
   }
 }
@@ -153,11 +159,11 @@
   transform: translateX(50%);
 
   @media (min-width: $tablet-width) {
-    top: -124px;
+    top: -109px;
   }
 
   @media (min-width: $desktop-width) {
-    top: 12px;
+    top: 1px;
     right: 217px;
     transform: none;
   }

@@ -32,7 +32,7 @@
     min-height: 338px;
     width: 708px;
     margin: 0 auto;
-    margin-bottom: 22px;
+    margin-bottom: 20px;
     &::before {
       top: -169px;
       right: auto;
@@ -213,7 +213,7 @@
 
   @media (min-width: $tablet-width) {
     position: relative;
-    top: -15px;
+    top: -13px;
     width: 32px;
     height: 32px;
     background-color: $main-color;
@@ -243,15 +243,28 @@
   border-radius: 5px;
   background-color: $main-color;
 
+  &:hover {
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15),
+    inset 0 0 0 12px #ffffff, 0 3px 5px 0 rgba(0, 0, 0, 0.25);
+  }
+
+  &:focus,
+  &:active {
+    outline: none;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15),
+    inset 0 0 0 10px #ffffff, 0 3px 5px 0 rgba(0, 0, 0, 0.25);
+    border: 2px solid $main-color;
+  }
+
   @media (min-width: $tablet-width) {
     position: relative;
-    top: -15px;
+    top: -13px;
     width: 34px;
     height: 34px;
     background-color: $main-color;
     border-radius: 50%;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15),
-    inset 0 0 0 13px #ffffff;
+    inset 0 0 0 12px #ffffff;
   }
 }
 
@@ -263,14 +276,16 @@
   border-radius: 5px;
   background-color: $main-color;
 
+
+
   @media (min-width: $tablet-width) {
     position: relative;
-    top: -15px;
-    width: 34px;
-    height: 34px;
+    top: -13px;
+    width: 30px;
+    height: 29px;
     background-color: $main-color;
     border-radius: 50%;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15),
-    inset 0 0 0 13px #ffffff;
+    inset 0 0 0 10px #ffffff;
   }
 }

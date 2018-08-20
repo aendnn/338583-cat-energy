@@ -1,27 +1,27 @@
 .food-programm {
   padding-top: 15px;
   padding-bottom: 32px;
-  border-top: 1px solid #e6e6e6;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
   color: #222222;
 
   @media (min-width: $tablet-width) {
-    padding-top: 39px;
+    padding-top: 30px;
     padding-bottom: 72px;
     font-size: 20px;
     line-height: 20px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 56px;
+    padding-top: 47px;
+    padding-bottom: 67px;
   }
 }
 
 .food-programm__title {
   @include text-reset;
-  margin-bottom: 24px;
+  margin-bottom: 25px;
   text-transform: none;
 
   @media (min-width: $tablet-width) {
@@ -81,13 +81,13 @@
   }
 
   &--additional {
-    padding-bottom: 38px;
+    padding-bottom: 37px;
   }
 
   @media (min-width: $tablet-width) {
     padding: 71px 0;
     padding-left: 44px;
-    padding-right: 41px;
+    padding-right: 39px;
     border-bottom: none;
 
     &--paramount {
@@ -190,7 +190,7 @@
 
 .food-programm__group-title {
   position: relative;
-  top: -36px;
+  top: -35px;
   left: -20px;
   width: 222px;
   font-size: 24px;
@@ -201,16 +201,16 @@
   background-color: #ffffff;
 
   &--contacts {
-    top: -34px;
+    top: -35px;
     width: 222px;
   }
 
   &--comment {
-    width: 164px;
+    width: 162px;
   }
 
   &--additional {
-    width: 186px;
+    width: 184px;
   }
 
   @media (min-width: $tablet-width) {
@@ -256,11 +256,10 @@
   padding: 0 20px;
 
   @media (min-width: $tablet-width) {
-    padding: 0 40px;
+    padding-left: 40px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0;
     padding-left: 40px;
   }
 }
@@ -290,6 +289,7 @@
   align-items: center;
 
   &--text {
+    position: relative;
     margin-bottom: 15px;
   }
 
@@ -335,7 +335,7 @@
 
 .food-programm__input-mark-text {
   order: -1;
-  padding-right: 15px;
+  padding-right: 14px;
 
   &--weight {
     padding-right: 17px;
@@ -343,33 +343,6 @@
 
   &--contacts {
     padding-right: 11px;
-  }
-
-  &--email,
-  &--phone {
-    position: relative;
-  }
-
-  &--email::before {
-    content: "";
-    position: absolute;
-    top: 3px;
-    right: -204px;
-    width: 17px;
-    height: 13px;
-    background-image: url("../img/icon-mail.svg");
-    background-repeat: no-repeat;
-  }
-
-  &--phone::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: -190px;
-    width: 20px;
-    height: 20px;
-    background-image: url("../img/icon-phone.svg");
-    background-repeat: no-repeat;
   }
 
   @media (min-width: $tablet-width) {
@@ -381,53 +354,111 @@
       padding-right: 18px;
     }
 
-    &--email::before {
-      top: 5px;
-      right: -531px;
-    }
-
     &--phone {
       padding-right: 13px;
-    }
-
-    &--phone::before {
-      top: 2px;
-      right: -519px;
-    }
-  }
-
-  @media (min-width: $desktop-width) {
-    &--email::before {
-      right: -469px;
-    }
-
-    &--phone::before {
-      right: -455px;
     }
   }
 }
 
 .food-programm__input-text {
   flex-grow: 1;
+  min-height: 44px;
   padding: 12px 14px;
   font: inherit;
   text-transform: uppercase;
   background-color: #ffffff;
   border: 1px solid #e6e6e6;
 
+  &:invalid {
+    padding: 11px 13px;
+    border: 2px solid #ff8888;
+  }
+
+  &:hover {
+    border-color: #cdcdcd;
+  }
+
+  &:focus,
+  &:active {
+    padding: 11px 13px;
+    border: 2px solid #444444;
+    outline: 0;
+  }
+
   @media (min-width: $tablet-width) {
+    min-height: 52px;
     padding: 10px 21px;
+
+    &:invalid {
+      padding: 9px 20px;
+      border: 2px solid #ff8888;
+    }
+
+    &:focus,
+    &:active {
+      padding: 9px 20px;
+      border: 2px solid #444444;
+    }
+  }
+}
+
+.food-programm__input-text:invalid ~ .food-programm__icon {
+  fill: #ff8282;
+}
+
+.food-programm__input-text:active ~ .food-programm__icon,
+.food-programm__input-text:focus ~ .food-programm__icon {
+  fill: $main-color;
+}
+
+.food-programm__icon {
+  position: absolute;
+  z-index: 20;
+  fill: #222222;
+
+  &--mail {
+    top: 15px;
+    right: 16px;
+  }
+
+  &--phone {
+    top: 12px;
+    right: 13px;
+  }
+
+  @media (min-width: $tablet-width) {
+    &--mail {
+      top: 21px;
+      right: 20px;
+    }
+
+    &--phone {
+      top: 18px;
+      right: 17px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--mail {
+      top: 20px;
+      right: 21px;
+    }
+
+    &--phone {
+      top: 17px;
+      right: 19px;
+    }
   }
 }
 
 .food-programm__input-mark-toggle {
   position: relative;
   padding: 5px 0;
-  padding-left: 47px;
+  padding-left: 45px;
 
   @media (min-width: $tablet-width) {
     padding: 9px 0;
-    padding-left: 59px;
+    padding-left: 61px;
 
     &--check {
       padding: 7px 0;
@@ -446,10 +477,11 @@
   background-color: #ffffff;
   border: 1px solid #d1d1d1;
   border-radius: 50%;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     top: 0;
-    left: -1px;
+    left: 1px;
     width: 40px;
     height: 40px;
   }
@@ -464,12 +496,32 @@
   height: 12px;
   background-color: $main-color;
   border-radius: 50%;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     top: 11px;
+    left: 12px;
     width: 18px;
     height: 18px;
   }
+}
+
+.food-programm__input-radio:hover + .food-programm__input-mark-toggle::before,
+.food-programm__input-radio:focus + .food-programm__input-mark-toggle::before,
+.food-programm__input-radio:checked:hover + .food-programm__input-mark-toggle::before,
+.food-programm__input-radio:checked:focus + .food-programm__input-mark-toggle::before {
+  border-color: #bfbfbf;
+}
+
+.food-programm__input-radio:active + .food-programm__input-mark-toggle::before,
+.food-programm__input-radio:active + .food-programm__input-mark-toggle::before,
+.food-programm__input-radio:checked:active + .food-programm__input-mark-toggle::before,
+.food-programm__input-radio:checked:active + .food-programm__input-mark-toggle::before,
+.food-programm__input-radio:active + .food-programm__input-mark-toggle::after,
+.food-programm__input-radio:active + .food-programm__input-mark-toggle::after,
+.food-programm__input-radio:checked:active + .food-programm__input-mark-toggle::after,
+.food-programm__input-radio:checked:active + .food-programm__input-mark-toggle::after {
+  opacity: 0.3;
 }
 
 .food-programm__input-checkbox + .food-programm__input-mark-toggle::before {
@@ -481,6 +533,7 @@
   height: 30px;
   background-color: #ffffff;
   border: 1px solid #d1d1d1;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     top: -3px;
@@ -499,6 +552,7 @@
   height: 16px;
   background-image: url("../img/icon-tick.svg");
   background-repeat: no-repeat;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     top: 10px;
@@ -506,6 +560,24 @@
     width: 21px;
     height: 16px;
   }
+}
+
+.food-programm__input-checkbox:hover + .food-programm__input-mark-toggle::before,
+.food-programm__input-checkbox:focus + .food-programm__input-mark-toggle::before,
+.food-programm__input-checkbox:checked:hover + .food-programm__input-mark-toggle::before,
+.food-programm__input-checkbox:checked:focus + .food-programm__input-mark-toggle::before {
+  border-color: #bfbfbf;
+}
+
+.food-programm__input-checkbox:active + .food-programm__input-mark-toggle::before,
+.food-programm__input-checkbox:active + .food-programm__input-mark-toggle::before,
+.food-programm__input-checkbox:checked:active + .food-programm__input-mark-toggle::before,
+.food-programm__input-checkbox:checked:active + .food-programm__input-mark-toggle::before,
+.food-programm__input-checkbox:active + .food-programm__input-mark-toggle::after,
+.food-programm__input-checkbox:active + .food-programm__input-mark-toggle::after,
+.food-programm__input-checkbox:checked:active + .food-programm__input-mark-toggle::after,
+.food-programm__input-checkbox:checked:active + .food-programm__input-mark-toggle::after {
+  opacity: 0.3;
 }
 
 .food-programm__input-text::placeholder {
@@ -520,13 +592,42 @@
   padding: 12px 0;
   padding-left: 15px;
   font: inherit;
+  text-transform: uppercase;
   background-color: #ffffff;
   border: 1px solid #e6e6e6;
+
+  &:invalid {
+    padding: 11px;
+    border: 2px solid #ff8888;
+  }
+
+  &:hover {
+    border-color: #cdcdcd;
+  }
+
+  &:focus,
+  &:active {
+    padding: 11px;
+    border: 2px solid #444444;
+    outline: 0;
+  }
 
   @media (min-width: $tablet-width) {
     min-height: 173px;
     padding: 14px 0;
     padding-left: 17px;
+
+    &:hover {
+      border-color: #cdcdcd;
+    }
+
+    &:focus,
+    &:active {
+      padding: 13px;
+      padding-left: 16px;
+      border: 2px solid #444444;
+      outline: 0;
+    }
   }
 }
 
@@ -552,7 +653,7 @@
 
 .food-programm__btn {
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 21px;
   padding: 11px;
 
   @media (min-width: $tablet-width) {
@@ -562,7 +663,7 @@
 
   @media (min-width: $desktop-width) {
     width: 46.7%;
-    padding: 16px 0;
+    padding: 15px 0;
   }
 }
 
