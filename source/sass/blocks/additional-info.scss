@@ -80,8 +80,9 @@
   font-weight: 400;
 
   br {
-     display: none;
-   }
+    display: none;
+  }
+
   @media (min-width: $tablet-width) {
     width: 32%;
     padding-right: 42px;

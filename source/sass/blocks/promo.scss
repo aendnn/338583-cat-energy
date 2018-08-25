@@ -6,6 +6,10 @@
   background-repeat: no-repeat;
   background-size: 100%;
 
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/index-background-mobile@2x.jpg");
+  }
+
   @media (min-width: $tablet-width) {
     padding-bottom: 17px;
     color: #111111;
@@ -27,7 +31,11 @@
       background-repeat: no-repeat;
       background-size: cover;
       background-position: 70px -10px;
+
+      @media (min-width: $desktop-width) and (min-resolution: $retina-dpi), (min-width: $desktop-width) and (min-resolution: $retina-dppx) {
+        background-image: url("../img/index-background-desktop@2x.jpg");
       }
+    }
   }
 }
 
@@ -119,6 +127,8 @@
   left: 0;
   z-index: 10;
   width: 100%;
+  color: #ffffff;
+  background-color: $main-color;
 
   @media (min-width: $tablet-width) {
     position: static;

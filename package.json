@@ -16,19 +16,31 @@
     "gulp-posthtml": "^3.0.4",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "4.0.x",
+    "gulp-svgmin": "^1.2.4",
+    "gulp-svgo": "^1.5.4",
     "gulp-svgstore": "^6.1.1",
+    "gulp-tinypng": "^1.0.2",
+    "gulp-uglify": "^3.0.1",
+    "gulp-uncss": "^1.0.6",
     "gulp-webp": "^3.0.0",
+    "imagemin-jpegtran": "^5.0.2",
+    "imagemin-svgo": "^7.0.0",
     "posthtml-include": "^1.1.0",
     "run-sequence": "^2.2.1",
     "stylelint": "9.2.x",
-    "stylelint-config-htmlacademy": "0.1.x"
+    "stylelint-config-htmlacademy": "0.1.x",
+    "uncss": "^0.16.2"
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
+    "clean": "gulp clean",
     "test": "npm run editorconfig && npm run stylelint",
     "build": "gulp build",
-    "images": "gulp images",
+    "sprite": "gulp-svgstore",
+    "svgmin": "gulp svgmin",
+    "imagemin": "gulp images",
+    "webp": "gulp webp",
     "start": "npm run build && gulp serve"
   },
   "browserslist": [
@@ -48,6 +60,7 @@
     "node": "8.11"
   },
   "dependencies": {
+    "gulp-htmlmin": "^4.0.0",
     "node-sass": "^4.9.0"
   }
 }
