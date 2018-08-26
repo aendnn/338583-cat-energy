@@ -1,14 +1,15 @@
 function initMap() {
   var element = document.getElementById("map");
   var options = {
-    zoom: 15,
+    zoom: 20,
     center: {lat: 59.9384333, lng: 30.3233235}
   };
 
   var myMap = new google.maps.Map(element, options);
   var marker = new google.maps.Marker({
     position: {lat: 59.9384333, lng: 30.3233235},
-    map: myMap
+    map: myMap,
+    icon: "../img/map-pin.png"
   });
 
   var InfoWindow = new google.maps.InfoWindow({

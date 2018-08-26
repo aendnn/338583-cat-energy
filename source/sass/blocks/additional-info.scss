@@ -79,20 +79,12 @@
   line-height: 20px;
   font-weight: 400;
 
-  br {
-    display: none;
-  }
-
   @media (min-width: $tablet-width) {
     width: 32%;
     padding-right: 42px;
     font-size: 16px;
     line-height: 20px;
     text-align: right;
-
-    br {
-      display: block;
-    }
   }
 
   @media (min-width: $desktop-width) {
