@@ -1,6 +1,4 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
-
-      cat-energy.github.io/source/index.html
     
 * Студент: [Anna](https://up.htmlacademy.ru/adaptive/14/user/338583).
 * Наставник: `Неизвестно`.
