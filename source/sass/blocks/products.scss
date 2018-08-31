@@ -1,14 +1,10 @@
 .products {
-  padding-top: 16px;
-
   @media (min-width: $tablet-width) {
     margin-bottom: 35px;
-    padding-top: 30px;
   }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 45px;
-    padding-top: 47px;
   }
 }
 
@@ -23,17 +19,6 @@
 
   @media (min-width: $desktop-width) {
     width: 94.3%;
-  }
-}
-
-.products__title {
-  @include text-reset;
-  margin-bottom: 27px;
-  padding-left: 20px;
-
-  @media (min-width: $tablet-width) {
-    margin-bottom: 165px;
-    padding-left: 0;
   }
 }
 

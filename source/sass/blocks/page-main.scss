@@ -1,0 +1,33 @@
+.page-main__title {
+  @include text-reset;
+
+  &--catalog {
+    margin-bottom: 27px;
+    padding-top: 16px;
+  }
+
+  &--form {
+    margin-bottom: 24px;
+    padding-top: 16px;
+    text-transform: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    &--catalog {
+      margin-bottom: 165px;
+      padding-top: 30px;
+    }
+
+    &--form {
+      margin-bottom: 55px;
+      padding-top: 30px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--catalog,
+    &--form {
+      padding-top: 47px;
+    }
+  }
+}

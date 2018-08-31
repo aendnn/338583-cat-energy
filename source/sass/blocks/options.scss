@@ -133,11 +133,11 @@
     padding-left: 161px;
 
     &--icon::before {
-    top: -13px;
-    right: auto;
-    left: 0;
-    width: 100px;
-    height: 100px;
+      top: -13px;
+      right: auto;
+      left: 0;
+      width: 100px;
+      height: 100px;
     }
 
     &--icon-slim::after {
@@ -204,7 +204,7 @@
   &:focus::before {
     width: 33px;
     height: 11px;
-    background-image: url("../img/icon-right-arrow-verylong.svg")
+    background-image: url("../img/icon-right-arrow-verylong.svg");
   }
 
   &:active {

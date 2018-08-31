@@ -19,7 +19,7 @@
           <a class="main-nav__link main-nav__link--logo logotype" href="index.html">
             <span class="visually-hidden">Главная</span>
             <picture>
-              <source media="(min-width: 1300px" srcset="img/logo-desktop.svg">
+              <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
               <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
               <img class="logotype__img" src="img/logo-mobile.svg" width="202" height="59" alt="Cat Energy">
             </picture>
@@ -42,9 +42,12 @@
       </nav>
     </header>
     <main class="page-main">
+      <div class="page-main__container container">
+        <h1 class="page-main__title page-main__title--form title">Подбор программы</h1>
+      </div>
       <section class="food-programm">
+        <h2 class="visually-hidden">Анкета для индивидуального выбора корма</h2>
         <div class="food-programm__wrap container">
-          <h2 class="food-programm__title title">Подбор программы</h2>
           <p class="food-programm__instructions">
             Заполните анкету и мы подберем
             программу питания для вашего кота
@@ -86,10 +89,10 @@
             </fieldset>
           </div>
           <fieldset class="food-programm__group food-programm__group--contacts">
+            <legend class="food-programm__group-title food-programm__group-title--contacts">
+              <span class="food-programm__group-title-text">Контактные данные (владельца кота)</span>
+            </legend>
             <div class="food-programm__group-wrap food-programm__group-wrap--contacts container">
-              <legend class="food-programm__group-title food-programm__group-title--contacts">
-                <span class="food-programm__group-title-text">Контактные данные (владельца кота)</span>
-              </legend>
               <div class="food-programm__items">
                 <p class="food-programm__item food-programm__item--text food-programm__item--contacts">
                   <input class="food-programm__input-text" type="text" name="email" id="email" placeholder="kuklachev@gmail.com" required>
@@ -109,20 +112,20 @@
             </div>
           </fieldset>
           <fieldset class="food-programm__group food-programm__group--comment">
+            <legend class="food-programm__group-title food-programm__group-title--comment">
+              <span class="food-programm__group-title-text">Комментарий</span>
+            </legend>
             <div class="food-programm__group-wrap food-programm__group-wrap--comment container">
-              <legend class="food-programm__group-title food-programm__group-title--comment">
-                <span class="food-programm__group-title-text">Комментарий</span>
-              </legend>
               <p class="food-programm__item food-programm__item--text">
                 <textarea class="food-programm__textarea" placeholder="Расскажите обо всех повадках кота"></textarea>
               </p>
             </div>
           </fieldset>
           <fieldset class="food-programm__group food-programm__group--additional">
+            <legend class="food-programm__group-title food-programm__group-title--additional">
+              <span class="food-programm__group-title-text">Дополнительно</span>
+            </legend>
             <div class="food-programm__group-wrap food-programm__group-wrap--additional container">
-              <legend class="food-programm__group-title food-programm__group-title--additional">
-                <span class="food-programm__group-title-text">Дополнительно</span>
-              </legend>
               <div class="food-programm__items food-programm__items--additional">
                 <p class="food-programm__item food-programm__item--checkbox">
                   <input class="visually-hidden food-programm__input-checkbox" type="checkbox" name="additionaly" id="sugar" checked>
@@ -175,14 +178,15 @@
           </picture>
         </div>
       </section>
-      <section class="contacts">
-        <h2 class="visually-hidden">Социальные сети</h2>
+      <section class="contacts contacts--form">
+        <h2 class="visually-hidden">Контактная информация</h2>
         <div class="contacts__container contacts__container--form container">
           <a class="contacts__logotype">
             <span class="visually-hidden">Главная</span>
             <img class="contacts__logotype-img" src="img/logo-footer.svg" width="128" height="24" alt="Cat Energy">
           </a>
           <section class="contacts__social social">
+            <h3 class="visually-hidden">Социальные сети</h3>
             <ul class="social__list">
               <li class="social__item social__item--vk">
                 <a class="social__link" href="vk.com">

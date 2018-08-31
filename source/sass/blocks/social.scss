@@ -39,16 +39,11 @@
 
   @media (min-width: $tablet-width) {
     width: auto;
-    padding: 0;
     padding: 0 15px;
 
     &--vk {
       padding-left: 35px;
     }
-  }
-
-  @media (min-width: $desktop-width) {
-
   }
 }
 
@@ -72,7 +67,7 @@
 
   &--vk {
     width: 22px;
-    height: 12px
+    height: 12px;
   }
 
   &--inst {

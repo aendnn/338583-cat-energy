@@ -81,7 +81,7 @@
 }
 
 .promo__title {
-  @include text-reset
+  @include text-reset;
   margin-bottom: 23px;
   font-size: 36px;
   line-height: 36px;

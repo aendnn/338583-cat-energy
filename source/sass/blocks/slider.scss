@@ -220,8 +220,8 @@
 }
 
 .slider__control::-webkit-slider-thumb {
-  box-sizing: border-box;
   -webkit-appearance: none;
+  box-sizing: border-box;
   width: 35px;
   height: 6px;
   border-radius: 5px;
@@ -234,19 +234,16 @@
     height: 32px;
     background-color: $main-color;
     border-radius: 50%;
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15),
-    inset 0 0 0 12px #ffffff;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15), inset 0 0 0 12px #ffffff;
 
     &:hover {
-      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15),
-      inset 0 0 0 12px #ffffff, 0 3px 5px 0 rgba(0, 0, 0, 0.25);
+      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15), inset 0 0 0 12px #ffffff, 0 3px 5px 0 rgba(0, 0, 0, 0.25);
     }
 
     &:focus,
     &:active {
       outline: none;
-      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15),
-      inset 0 0 0 10px #ffffff, 0 3px 5px 0 rgba(0, 0, 0, 0.25);
+      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15), inset 0 0 0 10px #ffffff, 0 3px 5px 0 rgba(0, 0, 0, 0.25);
       border: 2px solid $main-color;
     }
   }
@@ -260,15 +257,13 @@
   background-color: $main-color;
 
   &:hover {
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15),
-    inset 0 0 0 12px #ffffff, 0 3px 5px 0 rgba(0, 0, 0, 0.25);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15), inset 0 0 0 12px #ffffff, 0 3px 5px 0 rgba(0, 0, 0, 0.25);
   }
 
   &:focus,
   &:active {
     outline: none;
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15),
-    inset 0 0 0 10px #ffffff, 0 3px 5px 0 rgba(0, 0, 0, 0.25);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15), inset 0 0 0 10px #ffffff, 0 3px 5px 0 rgba(0, 0, 0, 0.25);
     border: 2px solid $main-color;
   }
 
@@ -279,8 +274,7 @@
     height: 34px;
     background-color: $main-color;
     border-radius: 50%;
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15),
-    inset 0 0 0 12px #ffffff;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15), inset 0 0 0 12px #ffffff;
   }
 }
 
@@ -299,8 +293,7 @@
     height: 29px;
     background-color: $main-color;
     border-radius: 50%;
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15),
-    inset 0 0 0 10px #ffffff;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15), inset 0 0 0 10px #ffffff;
   }
 }
 
